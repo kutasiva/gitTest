@@ -1,0 +1,12 @@
+
+username = $(git config user.name)
+
+if ["$username" != "Ivan Kutasov"]
+then 
+	cat <<\EOF
+Error: user.name not set to "Ivan Kutasov"
+
+EOF 
+	exit 1
+fi
+ 
